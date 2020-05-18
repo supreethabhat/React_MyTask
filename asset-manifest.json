@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/React_MyTask/static/css/main.1491be4f.chunk.css",
+    "main.js": "/React_MyTask/static/js/main.24d0a2ce.chunk.js",
+    "main.js.map": "/React_MyTask/static/js/main.24d0a2ce.chunk.js.map",
+    "runtime-main.js": "/React_MyTask/static/js/runtime-main.991c2314.js",
+    "runtime-main.js.map": "/React_MyTask/static/js/runtime-main.991c2314.js.map",
+    "static/js/2.bc56352c.chunk.js": "/React_MyTask/static/js/2.bc56352c.chunk.js",
+    "static/js/2.bc56352c.chunk.js.map": "/React_MyTask/static/js/2.bc56352c.chunk.js.map",
+    "index.html": "/React_MyTask/index.html",
+    "precache-manifest.fc3abbc467724c0cf8fe4124f1a7fad2.js": "/React_MyTask/precache-manifest.fc3abbc467724c0cf8fe4124f1a7fad2.js",
+    "service-worker.js": "/React_MyTask/service-worker.js",
+    "static/css/main.1491be4f.chunk.css.map": "/React_MyTask/static/css/main.1491be4f.chunk.css.map",
+    "static/js/2.bc56352c.chunk.js.LICENSE.txt": "/React_MyTask/static/js/2.bc56352c.chunk.js.LICENSE.txt",
+    "static/media/Supreetha.png": "/React_MyTask/static/media/Supreetha.251a0c3d.png",
+    "static/media/pen-solid.svg": "/React_MyTask/static/media/pen-solid.806db2c4.svg",
+    "static/media/search-solid.svg": "/React_MyTask/static/media/search-solid.2cbc2c36.svg",
+    "static/media/trash-solid.svg": "/React_MyTask/static/media/trash-solid.bda62654.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.991c2314.js",
+    "static/js/2.bc56352c.chunk.js",
+    "static/css/main.1491be4f.chunk.css",
+    "static/js/main.24d0a2ce.chunk.js"
+  ]
+}
