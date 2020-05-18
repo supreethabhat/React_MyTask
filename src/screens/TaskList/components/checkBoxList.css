@@ -1,0 +1,24 @@
+.checkbox {
+    width: 19px;
+    height: 19px;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 2px solid #95a4ab;
+    border-radius: 4px;
+    opacity: 1;
+}
+.textLabel {
+    text-align: left;
+    font-weight: 500;
+    font-size: 20px;
+    color: #5285ec;
+    opacity: 1;
+}
+hr.solid {
+    margin-top: 10px;
+    border-top: 2px solid #e8e8e8;
+}
+.padding {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}

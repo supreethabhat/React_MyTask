@@ -1,0 +1,86 @@
+.container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.flex-direction {
+    flex-direction: row;
+}
+.div1 {
+    width: 314px;
+    height: 132px;
+    margin: 10px;
+}
+
+.div2 {
+    width: 314px;
+    height: 132px;
+    margin: 10px;
+}
+
+.task {
+    width: 314px;
+    height: 132px;
+    margin: 10px;
+}
+
+.taskContainer {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.searchDisplay {
+    display: flex;
+}
+.search {
+    background: #d9dfeb 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+}
+.searchDiv {
+    margin-right: 10px;
+}
+.taskListCont {
+    margin-left: 30%;
+    flex-direction: column;
+    width: 42%;
+    display: inline-flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 500px) {
+    .flex-direction {
+        width: 100%;
+        flex-direction: column;
+    }
+    .div1 {
+        width: auto;
+        height: 131px;
+        margin: 10px;
+    }
+    .div2 {
+        width: auto;
+        height: 131px;
+        margin: 10px;
+    }
+    .task {
+        align-self: center;
+        width: auto;
+        height: auto;
+    }
+    .searchDisplay {
+        display: block;
+    }
+    .searchDiv {
+        margin-bottom: 10px;
+    }
+    .taskListCont {
+        margin-left: 0%;
+    flex-direction: column;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+}
