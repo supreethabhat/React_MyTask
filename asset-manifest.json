@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "./static/css/main.6b6a5375.chunk.css",
-    "main.js": "./static/js/main.5a15064c.chunk.js",
-    "main.js.map": "./static/js/main.5a15064c.chunk.js.map",
-    "runtime-main.js": "./static/js/runtime-main.1b601902.js",
-    "runtime-main.js.map": "./static/js/runtime-main.1b601902.js.map",
-    "static/js/2.792bcea3.chunk.js": "./static/js/2.792bcea3.chunk.js",
-    "static/js/2.792bcea3.chunk.js.map": "./static/js/2.792bcea3.chunk.js.map",
-    "index.html": "./index.html",
-    "precache-manifest.f510b568f48340a292501d7a626a4b38.js": "./precache-manifest.f510b568f48340a292501d7a626a4b38.js",
-    "service-worker.js": "./service-worker.js",
-    "static/css/main.6b6a5375.chunk.css.map": "./static/css/main.6b6a5375.chunk.css.map",
-    "static/js/2.792bcea3.chunk.js.LICENSE.txt": "./static/js/2.792bcea3.chunk.js.LICENSE.txt",
-    "static/media/Supreetha.png": "./static/media/Supreetha.251a0c3d.png",
-    "static/media/close-outline.svg": "./static/media/close-outline.6e24e3b9.svg",
-    "static/media/pen-solid.svg": "./static/media/pen-solid.806db2c4.svg",
-    "static/media/search-solid.svg": "./static/media/search-solid.2cbc2c36.svg",
-    "static/media/trash-solid.svg": "./static/media/trash-solid.bda62654.svg"
+    "main.css": "/React_MyTask/static/css/main.6b6a5375.chunk.css",
+    "main.js": "/React_MyTask/static/js/main.67141eec.chunk.js",
+    "main.js.map": "/React_MyTask/static/js/main.67141eec.chunk.js.map",
+    "runtime-main.js": "/React_MyTask/static/js/runtime-main.991c2314.js",
+    "runtime-main.js.map": "/React_MyTask/static/js/runtime-main.991c2314.js.map",
+    "static/js/2.792bcea3.chunk.js": "/React_MyTask/static/js/2.792bcea3.chunk.js",
+    "static/js/2.792bcea3.chunk.js.map": "/React_MyTask/static/js/2.792bcea3.chunk.js.map",
+    "index.html": "/React_MyTask/index.html",
+    "precache-manifest.0c435dbf7c30a11f544c814d9cbb0d42.js": "/React_MyTask/precache-manifest.0c435dbf7c30a11f544c814d9cbb0d42.js",
+    "service-worker.js": "/React_MyTask/service-worker.js",
+    "static/css/main.6b6a5375.chunk.css.map": "/React_MyTask/static/css/main.6b6a5375.chunk.css.map",
+    "static/js/2.792bcea3.chunk.js.LICENSE.txt": "/React_MyTask/static/js/2.792bcea3.chunk.js.LICENSE.txt",
+    "static/media/Supreetha.png": "/React_MyTask/static/media/Supreetha.251a0c3d.png",
+    "static/media/close-outline.svg": "/React_MyTask/static/media/close-outline.6e24e3b9.svg",
+    "static/media/pen-solid.svg": "/React_MyTask/static/media/pen-solid.806db2c4.svg",
+    "static/media/search-solid.svg": "/React_MyTask/static/media/search-solid.2cbc2c36.svg",
+    "static/media/trash-solid.svg": "/React_MyTask/static/media/trash-solid.bda62654.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1b601902.js",
+    "static/js/runtime-main.991c2314.js",
     "static/js/2.792bcea3.chunk.js",
     "static/css/main.6b6a5375.chunk.css",
-    "static/js/main.5a15064c.chunk.js"
+    "static/js/main.67141eec.chunk.js"
   ]
 }
