@@ -14,7 +14,7 @@ function StickyHeader(props) {
                 ></img>
                 <p style={Style.textStyle}>{props.headerTitle}</p>
             </div>
-            <p style={Style.headerTitle}>Logout</p>
+            <p style={Style.headerTitle} onClick={props.logOut}>Logout</p>
         </div>
 
     );
@@ -59,6 +59,7 @@ const Style = {
 
 StickyHeader.propTypes = {
     headerTitle: PropTypes.string.isRequired,
+    logOut : PropTypes.func.isRequired
 };
 
 export default React.memo(StickyHeader);

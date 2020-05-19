@@ -1,4 +1,4 @@
-import { AsyncStorage } from 'AsyncStorage';
+// import { AsyncStorage } from 'AsyncStorage';
 
 const SESSION_KEY = 'KEY_SESSION_TOKENS';
 
@@ -8,7 +8,8 @@ export default class Session {
      */
     static async getSessionDetails() {
         try {
-            const data = await AsyncStorage.getItem(SESSION_KEY);
+
+            const data = await localStorage.getItem(SESSION_KEY);
             if (data !== null) {
                 return JSON.parse(data);
             }
@@ -22,7 +23,7 @@ export default class Session {
      */
     static async saveSessionDetails(session) {
         try {
-            await AsyncStorage.setItem(SESSION_KEY, JSON.stringify(session));
+             await localStorage.setItem(SESSION_KEY, JSON.stringify(session));
         } catch (e) {}
     }
 
@@ -31,7 +32,7 @@ export default class Session {
      */
     static async removeSession() {
         try {
-            await AsyncStorage.removeItem(SESSION_KEY);
+          await localStorage.removeItem(SESSION_KEY);
         } catch (e) {}
     }
 }

@@ -12,10 +12,9 @@ export function* watchLogin() {
     yield takeLatest(FETCH_LOGIN, fetchLogin);
 }
 
-export function* fetchLogin(data) {
-    console.log(data.data)
+export function* fetchLogin(name) {
     try {
-        const data = yield call(TaskService.Login);
+        const data = yield call(TaskService.Login,name.data);
         yield call(SessionService.saveSessionDetails, data);
         yield put(setLogin(data));
     } catch (error) {

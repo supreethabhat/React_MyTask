@@ -41,8 +41,13 @@ function Login(props) {
                         />
                     </div>
                     <button
+                        disabled={name.trim() === ''}
                         type="submit"
-                        style={Style.button}
+                        style={
+                            name.trim() === ''
+                                ? Style.disabledButton
+                                : Style.button
+                        }
                         onClick={handleLogin}
                     >
                         {Locales.login}
@@ -78,6 +83,17 @@ const Style = {
     },
     button: {
         backgroundColor: Colors.buttonColor,
+        color: Colors.white,
+        borderRadius: '8px',
+        border: 0,
+        opacity: 1,
+        width: '100%',
+        padding: 8,
+        fontSize: theme.FONT_SIZE_MEDIUM,
+        fontWeight: theme.FONT_WEIGHT_MEDIUM,
+    },
+    disabledButton: {
+        backgroundColor: Colors.greyColor,
         color: Colors.white,
         borderRadius: '8px',
         border: 0,

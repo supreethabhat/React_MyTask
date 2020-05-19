@@ -1,36 +1,42 @@
 const {
-    FETCH_LOGIN,
-    SET_LOGIN,
-    LOGIN_FAIL,
-    LOG_OUT,
+    FETCH_TASKS,
+    SET_TASKS,
+    SET_ERROR_TASK,
+    // FILTER_TASK,
+    SET_FILTER_DATA
 } = require('../keys').default;
 
 export const initialState = {
-    data: null,
+    tasks: {},
     error: null,
+    filteredTask : []
 };
 
 export default (state = initialState, action) => {
     switch (action.type) {
-        case FETCH_LOGIN:
+        case FETCH_TASKS:
             return {
                 ...state,
             };
-        case SET_LOGIN:
+
+        case SET_TASKS:
             return {
                 ...state,
-                data: action.data,
+                tasks: action.data,
+                filteredTask: action.data.tasks,
             };
-        case LOGIN_FAIL:
+
+        case SET_ERROR_TASK:
             return {
                 ...state,
                 error: action.error,
             };
-        case LOG_OUT:
+        case SET_FILTER_DATA:
             return {
-                  ...initialState,
-
+                ...state,
+                filteredTask: action.data,
             };
+
         default:
             return state;
     }

@@ -10,4 +10,6 @@ newTask : 'New Task',
 search : 'Search by task name',
 completedTasks : 'Completed Tasks',
 genericErrorMessage : 'Error Occured',
+taskName : 'Task Name',
+noTasks : 'You have no task'
 };

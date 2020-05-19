@@ -3,10 +3,20 @@ export default keyMirror({
     FETCH_LOGIN: null,
     SET_LOGIN: null,
     LOGIN_FAIL: null,
+    LOG_OUT : null,
     //Dashboard
     FETCH_DASHBOARD_DET: null,
     SET_DASHBOARD_DET: null,
     SET_DASHBOARD_ERROR: null,
+    //Tasks
+    FETCH_TASKS: null,
+    UPDATE_TASKS: null,
+    DELETE_TASKS: null,
+    SET_TASKS: null,
+    SET_ERROR_TASK: null,
+    CREATE_TASKS : null,
+    FILTER_TASK : null,
+    SET_FILTER_DATA : null
 });
 
 /**

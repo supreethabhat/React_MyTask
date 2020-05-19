@@ -1,14 +1,10 @@
-import React, { useEffect, useCallback } from 'react';
+import React, {  useCallback } from 'react';
 import Login from './LoginView';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
 import { fetchLogin } from '../../redux/actions/login.action';
 import { withRouter } from 'react-router-dom';
 function LoginContainer(props) {
-    // useEffect(() => {
-    //     props.actions.fetchLogin();
-    // }, [props.actions]);
-
     const handleLogin = useCallback((id,name) => {
         props.actions.fetchLogin(name);
         props.history.push('/tasks');

@@ -49,6 +49,30 @@
     display: inline-flex;
     justify-content: center;
 }
+.taskCont {
+    width: 314px;
+    height: 132px;
+    margin: 10px;
+}
+.loader {
+  position: absolute;
+  top: calc(50% - 4em);
+  left: calc(50% - 4em);
+  width: 6em;
+  height: 6em;
+  border: 1.1em solid rgba(0, 0, 0, 0.2);
+  border-left: 1.1em solid #5285EC;
+  border-radius: 50%;
+  animation: load8 1.1s infinite linear;
+  transition: opacity 0.3s;
+}
+
+.noTask {
+     height: 134px;
+    padding: 20px;
+    width: 314px;
+}
+
 
 @media screen and (max-width: 500px) {
     .flex-direction {
@@ -82,5 +106,15 @@
     width: 100%;
     display: inline-flex;
     justify-content: center;
+}
+.taskCont {
+    width: auto;
+        height: auto;
+        margin: 10px;
+}
+.noTask {
+     height: auto;
+    padding: 20px;
+    width: auto;
 }
 }
