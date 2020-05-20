@@ -6,7 +6,6 @@ function CheckBoxList(props) {
     const [edit, setEdit] = useState(false);
     const toggleCheckboxChange = useCallback(
         event => {
-            console.log(event.target.checked);
             setCheck(event.target.checked);
             props.toggleCheckboxChange(
                 props.id,

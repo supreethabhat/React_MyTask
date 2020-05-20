@@ -38,10 +38,6 @@ function TaskListContainer(props) {
     const handleTaskDelete = useCallback(value => {
         props.actions.deleteTask(value);
     }, []);
-    /** On Edit of Task */
-    const handleTaskEdit = useCallback(value => {
-        console.log(value);
-    }, []);
     /** To open the pop up to create new task */
     const handlePopUp = useCallback(() => {
         setPopup(true);
@@ -49,7 +45,6 @@ function TaskListContainer(props) {
     /**Close the pop up and update the task */
     const handleClosePopUp = useCallback(taskValue => {
         props.actions.createTasks(taskValue);
-        console.log(taskValue);
         setPopup(false);
     }, []);
     /** Search through the tasks */
@@ -75,7 +70,6 @@ function TaskListContainer(props) {
                         totalTask={props.taskList ? props.taskList : []}
                         handleCheckboxChange={handleCheckBoxToggle}
                         handleTaskDelete={handleTaskDelete}
-                        handleTaskEdit={handleTaskEdit}
                         handlePopUp={handlePopUp}
                         handleSearch={handleSearch}
                         logOut={logOut}
