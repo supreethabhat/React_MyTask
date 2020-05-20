@@ -23,6 +23,7 @@ export function* fetchTasks() {
     try {
         const data = yield call(TaskService.getTasks);
         yield put(setTasks(data));
+        yield call(fetchDashboardData);
     } catch (error) {
         yield put(setErrorTask(error.message));
     }
@@ -31,7 +32,6 @@ export function* createTasks(action) {
     try {
         yield call(TaskService.createTasks, action);
         yield call(fetchTasks);
-        yield call(fetchDashboardData);
     } catch (error) {
         yield put(setErrorTask(error.message));
     }
@@ -55,7 +55,7 @@ export function* deleteTasks(action) {
 export function* filterData(action) {
     const taskData = yield select(state => state.task.tasks);
     const data = taskData.tasks.filter(item =>
-        item.name.includes(action.searchValue),
+        item.name.toLowerCase().includes(action.searchValue),
     );
     yield put(setFilterData(data));
 }

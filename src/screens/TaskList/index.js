@@ -69,7 +69,10 @@ function TaskListContainer(props) {
                     <TaskList
                         userName={props.loginData && props.loginData.token.name}
                         data={props.data}
-                        latestTasks={props.taskList ? props.taskList : []}
+                        latestTasks={
+                            props.data.latestTasks ? props.data.latestTasks : []
+                        }
+                        totalTask={props.taskList ? props.taskList : []}
                         handleCheckboxChange={handleCheckBoxToggle}
                         handleTaskDelete={handleTaskDelete}
                         handleTaskEdit={handleTaskEdit}
@@ -91,7 +94,7 @@ function mapStateToProps(state) {
         loginData: state.login.data,
         data: state.dashboard.data,
         error: state.dashboard.error,
-        taskList: state.task.filteredTask,
+        taskList: state.task.filteredTask ,
     };
 }
 

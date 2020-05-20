@@ -16,9 +16,19 @@ function CheckBoxList(props) {
         },
         [props],
     );
+    const toggleChangeEdit = useCallback(
+        event => {
+            props.toggleCheckboxChange(
+                props.id,
+                event.target.value,
+                props.check,
+            );
+        },
+        [props],
+    );
     const handleEdit = useCallback(() => {
         setEdit(true);
-    }, [props]);
+    }, []);
     const handleDelete = useCallback(() => {
         props.handleTaskDelete(props.id);
     }, [props]);
@@ -31,7 +41,7 @@ function CheckBoxList(props) {
                         className="textLabel"
                         type="text"
                         defaultValue={props.label}
-                        onChange={toggleCheckboxChange}
+                        onChange={toggleChangeEdit}
                         autoFocus
                     ></input>
                 ) : (
@@ -102,7 +112,6 @@ CheckBoxList.propTypes = {
     label: PropTypes.string.isRequired,
     complete: PropTypes.bool.isRequired,
     toggleCheckboxChange: PropTypes.func.isRequired,
-    handleTaskEdit: PropTypes.func.isRequired,
     handleTaskDelete: PropTypes.func.isRequired,
 };
 

@@ -13,7 +13,10 @@ function TaskList(props) {
     }, []);
     return (
         <div style={Style.mainContainer}>
-            <Sticky headerTitle={props.userName} logOut={props.logOut}></Sticky>
+            <Sticky
+                headerTitle={props.userName ? props.userName : ''}
+                logOut={props.logOut}
+            ></Sticky>
             {props.latestTasks.length > 0 ? (
                 <div>
                     <div
@@ -82,7 +85,7 @@ function TaskList(props) {
                     </div>
 
                     <div className="taskListCont" style={Style.container}>
-                        {props.latestTasks.map(item => (
+                        {props.totalTask.map(item => (
                             <CheckBox
                                 complete={item.completed}
                                 key={item._id}
@@ -192,15 +195,21 @@ const Style = {
 };
 
 TaskList.propTypes = {
-    userName: PropTypes.string.isRequired,
+    userName: PropTypes.string,
     data: PropTypes.object,
     latestTasks: PropTypes.array.isRequired,
+    totalTasks: PropTypes.array.isRequired,
     handleCheckboxChange: PropTypes.func.isRequired,
     handleTaskEdit: PropTypes.func.isRequired,
     handleTaskDelete: PropTypes.func.isRequired,
     handlePopUp: PropTypes.func.isRequired,
     handleSearch: PropTypes.func,
     logOut: PropTypes.func.isRequired,
+};
+
+TaskList.defaultProps = {
+    totalTasks: [],
+    latestTasks : []
 };
 
 export default React.memo(TaskList);
